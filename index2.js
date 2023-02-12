@@ -12,7 +12,7 @@ document.getElementById("depo-btn").addEventListener("click",function(){
         alert("Please provide a valid number");
         return;
     }
-    //1...... deposit updated-----
+    //1...... deposit updated-------
     // a.get deposit box from html using id
     const previousdepo=document.getElementById("depo");
     //b. get deposit value
