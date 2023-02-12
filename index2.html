@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/0890a76fa0.js" crossorigin="anonymous"></script>
+    <script>
+     tailwind.config = {
+       theme: {
+         extend: {
+           colors: {
+             yellow: '#FFFBF0',
+             green: '#A4BC46',
+           }
+         }
+       }
+     }
+   </script> 
+    <title>Document</title>
+</head>
+<body class="bg-slate-200 " >
+<header>
+    <h1 class="text-center text-6xl mt-8">Let's get some <span class="text-pink-400">Money!!!!</span> </h1>
+    <main class="w-9/12 bg-lime-300 mx-auto">
+      <div class=" grid md:grid-cols-3 w-9/12 mx-auto pt-8 mt-16 bg-lime-300">
+        <div class="mx-auto  bg-pink-300  rounded-lg p-4 m-3 w-9/12 text-center text-white font-semibold">
+          <h2 class="text-2xl">Deposit</h2>
+          <h3 class="text-2xl"> $<span id="depo">0</span></h3>
+        </div>
+        <div class=" mx-auto bg-purple-200 rounded-lg p-4 m-3 w-9/12 text-center text-white font-semibold">
+            <h2 class="text-2xl">Withdraw</h2>
+            <h3 class="text-2xl"> $<span id="withdraw">0</span></h3>
+          </div>
+         <div class="mx-auto  bg-pink-300  rounded-lg p-4 m-3 w-9/12 text-center text-white font-semibold " >
+            <h2 class="text-2xl">Balance</h2>
+            <h3 class="text-2xl"> $<span id="balance">2000</span></h3>
+          </div>
+      </div>
+      <div class=" grid md:grid-cols-2 mx-auto pt-8 mt-16 pb-12">
+        <div class="bg-violet-600 rounded-lg  mb-4  md:w-3/4 mx-auto   p-7">
+            <h3 class=" text-2xl mb-5  text-white font-bold  ">Please Deposit</h3>
+            <input type="text" name="" id="depo-text" class="block w-9/12 mb-5 p-2 rounded-lg" placeholder="$amount you want to deposit">
+            <button class=" rounded-lg hover:bg-lime-300 bg-white text-violet-600 p-3 text-2xl font-semibold  " id="depo-btn">Deposit</button>
+        </div>
+        <div class="bg-blue-800 rounded-lg md:w-3/4 mx-auto  p-7">
+            <h3 class=" text-2xl mb-5 text-white font-bold  ">Please Withdraw</h3>
+            <input type="text" name="" id="withdraw-text" class="block w-9/12 mb-5 p-2 rounded-lg" placeholder="$amount you want to withdraw">
+            <button class=" rounded-lg bg-white hover:bg-lime-300 text-blue-600 p-3 text-2xl font-semibold   " id="withdraw-btn">Withdraw</button>
+        </div>
+      </div>
+    </main>
+</header>
+<script src="./index2.js"></script>
+</body>
+</html>
+

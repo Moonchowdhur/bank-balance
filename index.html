@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/0890a76fa0.js" crossorigin="anonymous"></script>
+    <script>
+     tailwind.config = {
+       theme: {
+         extend: {
+           colors: {
+             yellow: '#FFFBF0',
+             green: '#A4BC46',
+           }
+         }
+       }
+     }
+   </script> 
+    <title>Document</title>
+</head>
+<body class="bg-slate-200 " >
+<header>
+    <h1 class="text-center text-6xl mt-8">Welcome to<br><span class="text-pink-400">my bank</span> </h1>
+    <main>
+        <div class="bg-lime-300 mx-auto mt-24 max-w-3xl w-full p-7">
+            <h3 class=" text-4xl mb-5">Please Login</h3>
+            <input type="text" name="" id="email" class="block w-9/12 mb-5 p-3 rounded-lg" placeholder="Please enter email">
+            <input type="password" name="" id="password" class="block w-9/12 mb-5 p-3 rounded-lg" placeholder="Please enter password">
+            <button class=" rounded-lg bg-gray-500 text-white p-3 text-2xl hover:bg-violet-600  " id="btn-submit">Submit</button>
+        </div>
+    </main>
+</header>
+<script src="./index.js"></script>
+</body>
+</html>
